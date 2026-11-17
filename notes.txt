@@ -6,3 +6,20 @@ mainly server focused framework
 ORM gives you typed queries and migrations for it. 
 
 
+The first line of the contract, // use prisma-8, is required, and the setup commands write it for you.
+
+instead of Prisma Migrate, we'll use prisma db push to synchronize your schema with your database. MongoDB
+also needs a replica set for Prisma's nested writes and transactions. MongoDB Atlas provides this.
+
+let's understand the most important part of Prisma: the schema.prisma file.
+
+I want to store user data in my database
+
+{
+  "name": "Tanmay",
+  "email": "tanmay@gmail.com",
+  "age": 20
+}
+
+Prisma lets you define this structure using a model.
+
