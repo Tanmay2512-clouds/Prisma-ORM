@@ -1,0 +1,8 @@
+#ORM: orm is a tool that helps you work with database using regular code instead of writing SQL manually 
+#Prisma has typesafety , performance  and community
+mainly server focused framework
+@Prisma ORM is the library your TypeScript app uses to read and write its database.
+@describe your data in a contract, which is the file that holds your models, and Prisma 
+ORM gives you typed queries and migrations for it. 
+
+
