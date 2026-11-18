@@ -59,6 +59,8 @@ We need three collections:
 A Prisma model describes the structure of your data. Prisma Client uses that model to communicate 
 with your database.
 
-We will create a new applicayion tracker
+We will create a new application tracker
 
 npx create-next-app@latest prisma-learning
+
+this creates a default structure for the 
