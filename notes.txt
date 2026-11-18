@@ -23,3 +23,36 @@ I want to store user data in my database
 
 Prisma lets you define this structure using a model.
 
+model User {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  name  String
+  email String @unique
+  age   Int
+}
+
+here model user means -: Creates a model named User. Prisma uses this model to generate database queries.
+
+id String-:
+
+The ID will be represented as a string in TypeScript.
+
+@map("_id")-:
+
+MongoDB stores its document identifier in _id, not id. This maps Prisma's id to MongoDB's _id.
+
+@unique-:
+
+Prevents two users from having the same email.
+
+@db.ObjectId-:
+
+Tells Prisma to store this field as a native MongoDB ObjectId.
+
+
+Let's imagine we're building a job application tracker.
+
+We need three collections:
+- User
+- Job
+- Company
+
