@@ -56,3 +56,9 @@ We need three collections:
 - Job
 - Company
 
+A Prisma model describes the structure of your data. Prisma Client uses that model to communicate 
+with your database.
+
+We will create a new applicayion tracker
+
+npx create-next-app@latest prisma-learning
