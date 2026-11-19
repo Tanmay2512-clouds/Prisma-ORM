@@ -72,3 +72,28 @@ This is the command-line tool. You use it to initialize Prisma, generate code an
 npx prisma init --datasource-provider mongodb
 
 setup of the folder structure
+
+schema.prisma
+
+This is where you define your database models, fields, relationships and data types.
+
+.env
+
+This is where you store sensitive environment variables, including your MongoDB connection URL.
+
+username -: tanmaychopra2514_db_user
+password-: 75WouFkh5GrLnHKN
+
+In prisma.schema file 
+
+generator client {
+  provider = "prisma-client-js"  (This tells Prisma which client generator to use.)
+}
+
+datasource db {
+  provider = "mongodb"              
+  url      = env("DATABASE_URL")
+}
+
+provider = "mongodb" tells Prisma which database we're using.
+url = env("DATABASE_URL") tells Prisma to read the connection URL from your environment variables.
