@@ -69,3 +69,6 @@ npx prisma --help
 
 This is the command-line tool. You use it to initialize Prisma, generate code and synchronize your database.
 
+npx prisma init --datasource-provider mongodb
+
+setup of the folder structure
