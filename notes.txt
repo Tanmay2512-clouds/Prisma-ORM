@@ -97,3 +97,6 @@ datasource db {
 
 provider = "mongodb" tells Prisma which database we're using.
 url = env("DATABASE_URL") tells Prisma to read the connection URL from your environment variables.
+
+One model can contain as many fields as your application needs.
+
